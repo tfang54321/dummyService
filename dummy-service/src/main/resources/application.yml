@@ -1,0 +1,10 @@
+server.port: 8086
+
+spring:
+  application:
+    name: dummy-service
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: http://localhost:8080/auth/realms/dev/protocol/openid-connect/certs
